@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UniNest - Find Your Perfect Roommate at KU</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
+    <div class="container">
+      <a class="navbar-brand d-flex align-items-center" href="index.html">
+        <i class="bi bi-house-door text-primary me-2"></i>
+        <span class="fw-bold">UniNest</span>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link active" href="index.html">Home</a>
+          </li>
+         
+          <li class="nav-item">
+            <a class="nav-link" href="list-room.html">List Room</a>
+          </li>
+          <li class="nav-item">
+           <a class="nav-link" href="#how-it-works">How It Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-outline-primary" href="login.php">Login</a>
+          </li>
+          <li class="nav-item ms-lg-2">
+            <a class="btn btn-primary" href="signup.php">Sign Up</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+ <!-- 🖼 Combined Hero + How It Works with Background -->
+<div style="background: url('image/background.jpg') no-repeat center center; background-size: cover;">
+
+  <!-- Hero Section -->
+  <section class="hero-section text-white" style="background-color: rgba(0,0,0,0.5);">
+    <div class="container py-5">
+      <div class="row align-items-center py-5">
+        <div class="col-lg-6 mb-5 mb-lg-0">
+          <h1 class="display-4 fw-bold mb-3">Find Your Perfect Rooms & Roommates at KU</h1>
+          <p class="lead mb-4">UniNest helps Kathmandu University students find compatible roommates and affordable housing through verified profiles and smart matching.</p>
+         <div class="d-flex gap-3 mt-4">
+  <a href="find-roommates.php" class="btn btn-light btn-lg fw-semibold shadow">Find a Roommate</a>
+ <a href="dashboard.php?action=post-room" class="btn btn-secondary">List Your Room</a>
+</div>
+
+        </div>
+        <div class="col-lg-6">
+         
+        </div>
+      </div>
+    </div>
+  </section>
+  </div> <!-- Ends background image container -->
+
+
+
+
+
+  <!-- How It Works Section -->
+
+
+  <section class="py-5" id="how-it-works" style="background-color: rgba(255,255,255,0.9);"></section>
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-primary">How UniNest Works</h2>
+        <p class="lead text-muted">Our platform uses scientific matching algorithms to connect you with compatible roommates.</p>
+      </div>
+
+      <!-- Your 3 Cards -->
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-circle mb-3">
+                <i class="bi bi-person-plus"></i>
+              </div>
+              <h3 class="h4 mb-3">Create Your Profile</h3>
+              <p class="text-muted">Sign up with your KU email, complete your profile, and take the compatibility quiz.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-circle mb-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <h3 class="h4 mb-3">Get Matched</h3>
+              <p class="text-muted">Our algorithm finds your most compatible roommates based on lifestyle and preferences.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body text-center p-4">
+              <div class="feature-icon bg-primary bg-opacity-10 text-primary rounded-circle mb-3">
+                <i class="bi bi-chat-dots"></i>
+              </div>
+              <h3 class="h4 mb-3">Connect Safely</h3>
+              <p class="text-muted">Chat with potential roommates through our secure messaging system.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+</div>
+
+  </section>
+
+  <!-- Find Your Match Section -->
+  <section class="bg-light py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-primary">Find Your Match</h2>
+        <p class="lead text-muted">Browse verified profiles of Kathmandu University students looking for roommates.</p>
+      </div>
+      
+      <div class="row mb-4">
+        <div class="col-md-8 mb-3 mb-md-0">
+          <div class="input-group">
+            <span class="input-group-text bg-white border-end-0">
+              <i class="bi bi-search"></i>
+            </span>
+            <input type="text" class="form-control border-start-0" placeholder="Search by location, budget, or preferences...">
+          </div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#filterModal">
+            <i class="bi bi-funnel me-2"></i>Filter Results
+          </button>
+        </div>
+      </div>
+
+      <div class="row g-4">
+        <!-- Roommate Card 1 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="avatar-placeholder me-3">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0">Aarav Sharma</h5>
+                    <p class="text-muted small mb-0">Computer Science</p>
+                  </div>
+                </div>
+                <span class="badge bg-primary">92% Match</span>
+              </div>
+              <div class="row mb-3 g-2">
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-clock me-2 text-muted"></i>
+                    <span>3rd Year</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-geo-alt me-2 text-muted"></i>
+                    <span>Dhulikhel</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center small">
+                    <span class="fw-medium me-2">Budget:</span>
+                    <span>NPR 8-10K/month</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary btn-sm">View Profile</button>
+                <button class="btn btn-primary btn-sm">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Roommate Card 2 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="avatar-placeholder me-3">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0">Priya Tamang</h5>
+                    <p class="text-muted small mb-0">Business Administration</p>
+                  </div>
+                </div>
+                <span class="badge bg-primary">87% Match</span>
+              </div>
+              <div class="row mb-3 g-2">
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-clock me-2 text-muted"></i>
+                    <span>2nd Year</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-geo-alt me-2 text-muted"></i>
+                    <span>Banepa</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center small">
+                    <span class="fw-medium me-2">Budget:</span>
+                    <span>NPR 7-9K/month</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary btn-sm">View Profile</button>
+                <button class="btn btn-primary btn-sm">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Roommate Card 3 -->
+        <div class="col-md-6 col-lg-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="d-flex justify-content-between align-items-start mb-3">
+                <div class="d-flex align-items-center">
+                  <div class="avatar-placeholder me-3">
+                    <i class="bi bi-person"></i>
+                  </div>
+                  <div>
+                    <h5 class="card-title mb-0">Niraj Poudel</h5>
+                    <p class="text-muted small mb-0">Engineering</p>
+                  </div>
+                </div>
+                <span class="badge bg-primary">85% Match</span>
+              </div>
+              <div class="row mb-3 g-2">
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-clock me-2 text-muted"></i>
+                    <span>4th Year</span>
+                  </div>
+                </div>
+                <div class="col-6">
+                  <div class="d-flex align-items-center small">
+                    <i class="bi bi-geo-alt me-2 text-muted"></i>
+                    <span>Dhulikhel</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="d-flex align-items-center small">
+                    <span class="fw-medium me-2">Budget:</span>
+                    <span>NPR 10-12K/month</span>
+                  </div>
+                </div>
+              </div>
+              <div class="d-flex justify-content-between">
+                <button class="btn btn-outline-primary btn-sm">View Profile</button>
+                <button class="btn btn-primary btn-sm">Connect</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="find-roommates.html" class="btn btn-outline-primary">View All Roommates</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Compatibility System Section -->
+  <section class="py-5">
+    <div class="container py-4">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-bold text-primary mb-4">Our 5-Factor Compatibility System</h2>
+          <p class="lead mb-4">UniNest uses a scientific approach to match roommates based on key lifestyle factors.</p>
+          
+          <div class="compatibility-factors">
+            <div class="d-flex align-items-start mb-4">
+              <div class="factor-icon bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i class="bi bi-alarm"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Sleep Patterns</h3>
+                <p class="text-muted mb-0">Early bird or night owl? We match similar chronotypes.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="factor-icon bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i class="bi bi-check2-circle"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Cleanliness Standards</h3>
+                <p class="text-muted mb-0">From neat-freak to relaxed, find your cleanliness match.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="factor-icon bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i class="bi bi-people"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Social Preferences</h3>
+                <p class="text-muted mb-0">How often do you have guests over? Find compatible social styles.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start mb-4">
+              <div class="factor-icon bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i class="bi bi-volume-up"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Noise Tolerance</h3>
+                <p class="text-muted mb-0">Study in silence or music in the background? Match your noise preferences.</p>
+              </div>
+            </div>
+            
+            <div class="d-flex align-items-start">
+              <div class="factor-icon bg-primary bg-opacity-10 text-primary rounded-circle me-3">
+                <i class="bi bi-book"></i>
+              </div>
+              <div>
+                <h3 class="h5 mb-2">Study Habits</h3>
+                <p class="text-muted mb-0">Match with roommates who have similar study schedules and environments.</p>
+              </div>
+            </div>
+          </div>
+          
+          <a href="compatibility_quiz.php" class="btn btn-primary mt-4">Take the Compatibility Quiz</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="image/image2.png" alt="Compatibility factors illustration" class="img-fluid rounded shadow">
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+
+  <!-- Testimonials Section -->
+  <section class="bg-light py-5">
+    <div class="container py-4">
+      <div class="text-center mb-5">
+        <h2 class="display-5 fw-bold text-primary">Testimonials</h2>
+        <p class="lead text-muted">Hear from KU students who found their perfect roommates through UniNest.</p>
+      </div>
+      
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4">"I was struggling to find a roommate who matched my study schedule. UniNest connected me with someone perfect in just 3 days!"</p>
+              <div>
+                <p class="fw-medium mb-0">Anjali Shrestha</p>
+                <p class="text-muted small">Computer Engineering, 3rd Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4">"The compatibility quiz really works! My roommate and I have similar cleanliness standards and sleep schedules, which makes living together so easy."</p>
+              <div>
+                <p class="fw-medium mb-0">Bikash Rai</p>
+                <p class="text-muted small">Business Administration, 2nd Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-md-4">
+          <div class="card h-100 border-0 shadow-sm">
+            <div class="card-body p-4">
+              <div class="mb-3">
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+                <i class="bi bi-star-fill text-warning"></i>
+              </div>
+              <p class="text-muted fst-italic mb-4">"After a bad experience with a random roommate, I tried UniNest. The verification system gave me peace of mind, and I found a great match."</p>
+              <div>
+                <p class="fw-medium mb-0">Manisha Adhikari</p>
+                <p class="text-muted small">Environmental Science, 4th Year</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5">
+    <div class="container py-4 text-center">
+      <h2 class="display-5 fw-bold text-primary mb-4">Ready to Find Your Perfect Roommate?</h2>
+      <p class="lead text-muted mb-4">Join UniNest today and get matched with compatible KU students.</p>
+      <div class="d-flex flex-column flex-sm-row justify-content-center gap-2">
+        <a href="signup.php" class="btn btn-primary btn-lg">Sign Up with KU Email</a>
+        <a href="how-it-works.html" class="btn btn-outline-primary btn-lg">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-light py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-4 mb-4 mb-lg-0">
+          <a class="d-flex align-items-center text-decoration-none mb-3" href="index.html">
+            <i class="bi bi-house-door text-primary me-2"></i>
+            <span class="fw-bold text-dark">UniNest</span>
+          </a>
+          <p class="text-muted">Helping Kathmandu University students find compatible roommates and affordable housing.</p>
+          <div class="d-flex gap-3">
+            <a href="#" class="text-muted"><i class="bi bi-facebook"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-twitter"></i></a>
+            <a href="#" class="text-muted"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+        
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="fw-bold mb-3">Quick Links</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="index.html" class="text-decoration-none text-muted">Home</a></li>
+            <li class="mb-2"><a href="find-roommates.html" class="text-decoration-none text-muted">Find Roommates</a></li>
+            <li class="mb-2"><a href="list-room.html" class="text-decoration-none text-muted">List Room</a></li>
+            <li class="mb-2"><a href="how-it-works.html" class="text-decoration-none text-muted">How It Works</a></li>
+            <li><a href="about.html" class="text-decoration-none text-muted">About Us</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-6 col-md-3 col-lg-2">
+          <h5 class="fw-bold mb-3">Resources</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="safety.html" class="text-decoration-none text-muted">Safety Tips</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Roommate Agreement</a></li>
+            <li class="mb-2"><a href="#" class="text-decoration-none text-muted">Housing Guide</a></li>
+            <li class="mb-2"><a href="faq.html" class="text-decoration-none text-muted">FAQ</a></li>
+            <li><a href="contact.html" class="text-decoration-none text-muted">Contact Support</a></li>
+          </ul>
+        </div>
+        
+        <div class="col-md-6 col-lg-4">
+          <h5 class="fw-bold mb-3">Contact Us</h5>
+          <address class="text-muted mb-0">
+            <p class="mb-1">Kathmandu University</p>
+            <p class="mb-1">Dhulikhel, Kavre</p>
+            <p class="mb-1">Nepal</p>
+            <p class="mb-0">support@uninest.edu.np</p>
+          </address>
+        </div>
+      </div>
+      
+      <div class="border-top mt-4 pt-4 text-center text-muted">
+        <p class="small mb-0">&copy; <script>document.write(new Date().getFullYear())</script> UniNest. All rights reserved. A project for COM 244.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Filter Modal -->
+  <div class="modal fade" id="filterModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Filter Roommates</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="mb-4">
+            <label class="form-label fw-medium">Location</label>
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="location-dhulikhel">
+                  <label class="form-check-label" for="location-dhulikhel">Dhulikhel</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="location-banepa">
+                  <label class="form-check-label" for="location-banepa">Banepa</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="location-kathmandu">
+                  <label class="form-check-label" for="location-kathmandu">Kathmandu</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="location-bhaktapur">
+                  <label class="form-check-label" for="location-bhaktapur">Bhaktapur</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label for="faculty" class="form-label fw-medium">Faculty</label>
+            <select class="form-select" id="faculty">
+              <option value="all">All Faculties</option>
+              <option value="engineering">Engineering</option>
+              <option value="science">Science</option>
+              <option value="management">Management</option>
+              <option value="arts">Arts</option>
+              <option value="medical">Medical Sciences</option>
+              <option value="law">Law</option>
+              <option value="education">Education</option>
+            </select>
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label fw-medium">Budget Range (NPR/month)</label>
+            <div class="range-slider">
+              <input type="range" class="form-range" min="3000" max="20000" step="500" id="budgetRange">
+              <div class="d-flex justify-content-between">
+                <span class="small">NPR 3,000</span>
+                <span class="small">NPR 20,000</span>
+              </div>
+              <div class="text-center mt-2">
+                <span class="badge bg-primary" id="budgetValue">NPR 10,000</span>
+              </div>
+            </div>
+          </div>
+          
+          <div class="mb-4">
+            <label class="form-label fw-medium">Compatibility Preferences</label>
+            <div class="row g-2">
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-early-bird">
+                  <label class="form-check-label" for="pref-early-bird">Early Bird</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-night-owl">
+                  <label class="form-check-label" for="pref-night-owl">Night Owl</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-neat">
+                  <label class="form-check-label" for="pref-neat">Neat & Tidy</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-relaxed">
+                  <label class="form-check-label" for="pref-relaxed">Relaxed Cleanliness</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-guests-yes">
+                  <label class="form-check-label" for="pref-guests-yes">Frequent Guests</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-guests-no">
+                  <label class="form-check-label" for="pref-guests-no">Minimal Guests</label>
+                </div>
+              </div>
+              <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="pref-quiet">
+                  <label class="form-check-label" for="pref-quiet">Quiet Study Environment</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
+          <button type="button" class="btn btn-primary">Apply Filters</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // Simple script to update budget range value
+    const budgetRange = document.getElementById('budgetRange');
+    const budgetValue = document.getElementById('budgetValue');
+    
+    if (budgetRange && budgetValue) {
+      budgetRange.addEventListener('input', function() {
+        budgetValue.textContent = `NPR ${this.value}`;
+      });
+    }
+  </script>
+</body>
+</html>

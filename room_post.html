@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Post Your Room</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f8ff;
+      padding: 40px;
+    }
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background: white;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      text-align: center;
+      color: #0A1D56;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    button {
+      background: #0A1D56;
+      color: white;
+      border: none;
+      padding: 12px;
+      width: 100%;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h2>Post Your Room 🏠</h2>
+    <form action="room_post.php" method="POST" enctype="multipart/form-data">
+  <input type="text" name="room_title" placeholder="Room Title" required><br><br>
+  <input type="text" name="location" placeholder="Location" required><br><br>
+  <input type="number" name="rent" placeholder="Monthly Rent" required><br><br>
+
+  <!-- Image Upload -->
+  <label>Upload Room Image:</label>
+  <input type="file" name="room_image" accept="image/*" required><br><br>
+
+  <button type="submit">Post Room</button>
+</form>
+
+  </div>
+</body>
+</html>

@@ -1,0 +1,120 @@
+/* Custom styles for UniNest */
+
+/* Base styles */
+
+  body {
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #333;
+}
+
+/* Hero section */
+.hero-section {
+  background-color: #0A1D56;
+  padding-top: 6rem;
+  padding-bottom: 3rem;
+}
+
+/* Feature icons */
+.feature-icon {
+  width: 60px;
+  height: 60px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.feature-icon i {
+  font-size: 1.75rem;
+}
+
+/* Safety icons */
+.safety-icon i {
+  font-size: 2.5rem;
+  color: white;
+}
+
+/* Avatar placeholder */
+.avatar-placeholder {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.avatar-placeholder i {
+  font-size: 1.25rem;
+  color: #6b7280;
+}
+
+/* Factor icons */
+.factor-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.factor-icon i {
+  font-size: 1.25rem;
+}
+
+/* Primary color customization */
+.bg-primary {
+  background-color: #0A1D56 !important;
+}
+
+.text-primary {
+  color: #0A1D56 !important;
+}
+
+.btn-primary {
+  background-color: #0A1D56;
+  border-color: #0A1D56;
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+  background-color: #08163d;
+  border-color: #08163d;
+}
+
+.btn-outline-primary {
+  color: #0A1D56;
+  border-color: #0A1D56;
+}
+
+.btn-outline-primary:hover,
+.btn-outline-primary:focus {
+  background-color: #0A1D56;
+  border-color: #0A1D56;
+}
+
+.bg-primary-dark {
+  background-color: #08163d;
+}
+
+/* Form customization */
+.form-control:focus,
+.form-select:focus,
+.form-check-input:focus {
+  border-color: #93c5fd;
+  box-shadow: 0 0 0 0.25rem rgba(10, 29, 86, 0.25);
+}
+
+.form-check-input:checked {
+  background-color: #0A1D56;
+  border-color: #0A1D56;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767.98px) {
+  .hero-section {
+    padding-top: 5rem;
+  }
+}
